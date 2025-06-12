@@ -2,37 +2,46 @@
 <html>
 <head>
   <meta charset="utf-8">
-  
-  <meta property="og:title" content="Adaptive Fuzzy Predictor based Fast Terminal Sliding Mode Controller Design for Two-Link Robot Manipulator"/>
-  <meta property="og:url" content="https://shr-eyas.github.io/AFP-FTSMC/"/>
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
+  <meta name="description"
+        content="Adaptive Fuzzy Predictor based Fast Terminal Sliding Mode Controller Design for Two-Link Robot Manipulator">
+  <meta name="keywords" content="Imitation Learning, Bimanual Dexterous Manipulation, Automated Data Generation, Humanoid Robots.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Adaptive Fuzzy Predictor based Fast Terminal Sliding Mode Controller Design for Two-Link Robot Manipulator</title>
-  
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-  <link rel="icon" href="static/figures/icon2.png">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
-
 <body>
 
-  
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -53,349 +62,592 @@
   </div>
 </nav>
 
-<section class="publication-header">
-  <div class="hero-body">
-    <div class="container is-max-widescreen">
-      <!-- <div class="columns is-centered"> -->
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Adaptive Fuzzy Predictor based Fast Terminal Sliding Mode Controller Design for Two-Link Robot Manipulator</h1>
-          <div class="is-size-3 publication-authors">
-            ICC, 2024
-          </div>
-        </div>
-    </div>
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
 
-</section>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hypernerf.github.io">
+            HyperNeRF
+          </a>
+          <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a>
+          <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a>
+        </div>
+      </div>
+    </div>
 
-<section class="publication-author-block">
+  </div>
+</nav> -->
+
+<section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Adaptive Fuzzy Predictor based Fast Terminal Sliding Mode Controller Design for Two-Link Robot Manipulator</h1>
           <div class="is-size-5 publication-authors">
-           <span class="author-block"><a href="https://shr-eyas.github.io" target="_blank">Shreyas Kumar</a>,</span>
-           <span class="author-block"><a href="https://www.linkedin.com/in/bishesha-dash/" target="_blank">Bishesha Dash </a>,</span>
-           <span class="author-block"><a href="https://www.iiests.ac.in/IIEST/Faculty/ee-roshni" target="_blank">Roshni Maiti</a>,</span>
-           <span class="author-block"><a href="https://mnnit.ac.in/profile/dipayan" target="_blank">Dipayan Guha</a>
+
+            <span class="author-block"><a href="https://shr-eyas.github.io" target="_blank">Shreyas Kumar</a>,</span>
+            <span class="author-block"><a href="https://www.linkedin.com/in/bishesha-dash/" target="_blank">Bishesha Dash </a>,</span>
+            <span class="author-block"><a href="https://www.iiests.ac.in/IIEST/Faculty/ee-roshni" target="_blank">Roshni Maiti</a>,</span>
+            <span class="author-block"><a href="https://mnnit.ac.in/profile/dipayan" target="_blank">Dipayan Guha</a>
           </div>
 
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://harish.people.iitgn.ac.in/">Harish J Palanthandalam-Madapusi</a>,</span>
+          </div> -->
+
+          <!-- <div class="is-size-5 publication-authors has-text-centered">
+            <p>*Equal Contributions, †Project Leads</p>
+          </div> -->
+
+          <!-- <div class="is-size-5 publication-authors has-text-centered">
+            <p>*Equal Contributions</p>
+          </div> -->
+
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Indian Institute of Engineering Science and Technology, National Institute of Technology Allahabad</span> 
+            <span class="author-block">IITGN Robotics Laboratory</span>
+          </div>
+
+          <div class="is-size-5 publication-conference">
+            <p><strong>Autonomous Robots</strong></p>
           </div>
 
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <span class="link-block">
-                <a href="https://ieeexplore.ieee.org/document/10883745" target="_blank"
-                  class="external-link button is-normal is-rounded">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-
-              
-              <!-- PDF Link. -->
-<!--              <span class="link-block">-->
-<!--                <a href="static/source/ADDHEREPDF.pdf" target="_blank"-->
-<!--                  class="external-link button is-normal is-rounded">-->
-<!--                  <span class="icon">-->
-<!--                    <i class="fas fa-file-pdf"></i>-->
-<!--                  </span>-->
-<!--                  <span>Paper</span>-->
-<!--                </a>-->
-<!--              </span>-->
-<!--                            </span>-->
-              <!-- </span> -->
-              <!-- Colab Link. -->
-<!--              <span class="link-block">-->
-<!--                <a href="ADD HERE THE CODE" target="_blank"-->
-<!--                class="external-link button is-normal is-rounded">-->
-<!--                <span class="icon">-->
-<!--                  <i class="fab fa-github"></i>-->
-<!--                </span>-->
-<!--                <span>Code</span>-->
-<!--              </a>-->
-<!--             </span>-->
-
-<!--              <span class="link-block">-->
-<!--                <a href="ADD HERE REPLICATE IF NEEDED" target="_blank"-->
-<!--                class="external-link button is-normal is-rounded">-->
-<!--                <span class="icon">-->
-<!--                  <i class="fas fa-rocket"></i>-->
-<!--                </span>-->
-<!--                <span>Demo</span>-->
-<!--              </a>-->
-<!--              </span>-->
-              <!-- </span> -->
-              <!-- Colab Link. -->
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2410.24185"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2410.24185"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link.
+                <span class="link-block">
+                  <a href="TODO"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/NVlabs/dexmimicgen/"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span>
+                <!-- Twitter Link. -->
+                <span class="link-block">
+                  <a href="https://twitter.com/SteveTod1998/status/1852365700372832707"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                    <span>Summary</span>
+                    </a>
+                </span>
+              </div>
+  
             </div>
           </div>
-
         </div>
       </div>
+    </div>
+  </section>
+
+
+  <!-- full overview video -->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <video class="center" playsinline autoplay loop muted controls src="./resources/full-overview.mp4" width="100%" style="border-radius:20px;"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <br>
+  <section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>DexMimicGen automatically generates large datasets for bimanual dexterous manipulation from a few human demonstrations</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <video class="center" playsinline autoplay loop muted src="./resources/method-overview.mp4" width="100%" style="border-radius:20px;"></video>
+            <!-- <p style="text-align: center; font-size: 22px">MimicGen is a system for automatically generating large-scale, rich datasets from only a small number (~10) of human demonstrations.</p> -->
+          </div>
+        </div>
     </div>
   </div>
 </section>
 
-<!-- 
-<section class="hero is-small">
-  <!~~ <div class="hero-body"> ~~>
-<section class="hero teaser">
-  <div class="container is-max-desktop">
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>DexMimicGen produces large-scale bimanual dexterous manipulation datasets with minimal human effort</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <!-- <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>HITL-TAMP trains proficient real-world agents on challenging contact-rich and long-horizon manipulation</strong></h3> -->
+          <!-- <p style="text-align: center; font-size: 22px">Below, we show several uncut videos of HITL-TAMP agent performance on real-world manipulation.</p> -->
+
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <video class="center" playsinline autoplay loop muted src="./resources/dataset.mp4" width="100%" style="border-radius:20px;"></video>
+              <p style="text-align: center; font-size: 22px">
+                We used DexMimicGen to autonomously generate over 20,000 demonstrations for bimanual dexterous robots 
+                from just 60 source human demonstrations across 9 tasks, multiple simulators, and the real-world.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-light is-small">
     <div class="hero-body">
-      <!~~ <div id="results-carousel" class="carousel results-carousel"> ~~>
-      <div class="container">
-      <div class="item">
-      <div class="column is-centered has-text-centered">
-        <img src="static/figures/teaser.png" alt="UNIMASKM"/>
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><bold>MimicGen datasets can produce performant policies across diverse tasks with simple Behavioral Cloning</bold></h3>
+        </div>
       </div>
-
     </div>
-  </div>
- <!~~  </div> ~~>
-  </div>
-  </div>
- <!~~  </div> ~~>
-</section>
- -->
-
-  <!-- <section class="hero is-small">
-<section class="hero teaser">
-  <div class="container is-max-desktop">
+    </div>
+  </section>
+  
+  
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+  
+          <div class="columns is-centered">
+            <div class="column is-one-third">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/dp/can.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Can Sorting</p>
+                <p style="text-align: center; font-size: 16px">Success Rate: 97.3 ± 0.9%</p>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/dp/coffee.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Coffee</p>
+                <p style="text-align: center; font-size: 16px">Success Rate: 77.3 ± 0.9%</p>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/dp/pouring.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Pouring</p>
+                <p style="text-align: center; font-size: 16px">Success Rate: 79.3 ± 0.9%</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="columns is-centered">
+            <div class="column is-one-third">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/dp/lift_tray.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Tray Lift</p>
+                <p style="text-align: center; font-size: 16px">Success Rate: 88.7 ± 0.9%</p>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/dp/box_cleanup.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Box Cleanup</p>
+                <p style="text-align: center; font-size: 16px">Success Rate: 92.0 ± 4.3%</p>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/dp/drawer_cleanup.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Drawer Cleanup</p>
+                <p style="text-align: center; font-size: 16px">Success Rate: 76.0 ± 0.0%</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="columns is-centered">
+            <div class="column is-one-third">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/dp/threading.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Threading</p>
+                <p style="text-align: center; font-size: 16px">Success Rate: 69.3 ± 1.9%</p>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/dp/transport.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Transport</p>
+                <p style="text-align: center; font-size: 16px">Success Rate: 83.3 ± 0.9%</p>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./resources/dp/assembly.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Piece Assembly</p>
+                <p style="text-align: center; font-size: 16px">Success Rate: 80.7 ± 0.9%</p>
+              </div>
+            </div>
+          </div>
+  
+        </div> 
+      </div>
+    </div>
+  </section>
+  
+  <section class="hero is-light is-small">
     <div class="hero-body">
-      <div class="container">
-        <div class="item">
-          <p style="margin-bottom: 30px">
- 
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <source src="static/figures/videos/overview.mp4"
-          type="video/mp4">
-        </video>
-        </p>
-        </div>
-    </div>
-  </div>
-  </div>
-  </div>
-</section> -->
-    
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            This paper proposes an Adaptive Fuzzy Predictor based Fast Terminal Sliding Mode Control (AFP-FTSMC) for a two-link robotic manipulator (TLRM). The unknown disturbances, changing with time, present in the TLRM system are estimated using the fuzzy predictor model and the accurate control action is formulated using the FTSM controller to tackle the nonlinearities in the system. The disturbance, varying with time, is estimated using adaptive fuzzy predictor, and the fuzzy adaptive rule is developed from the Lyapunov stability criteria. The chattering phenomenon and singularity problem is efficiently addressed by utilizing the fast terminal sliding mode control law. The overall controller is capable of producing fast-tracking performance by rejecting the disturbance and chattering adequately. The stable performance of the TLRM system with the proposed controller is guaranteed by utilizing Lyapunov stability criteria. The experimental results demonstrate that the proposed controller achieves superior tracking performance and robustness for nonlinear TLRM system compared to the existing terminal sliding mode control method, even in the presence of significant uncertainties and time-varying external disturbances.
-           </p>
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Policy performance improves with larger DexMimicGen datasets</strong></h3>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <video class="center" playsinline autoplay loop muted src="./resources/scaling.mp4" width="100%" style="border-radius:20px;"></video>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>DexMimicGen leverages a Real2Sim2Real pipeline to train performant policies for the real world</strong></h3>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <video class="center" playsinline autoplay loop muted controls src="./resources/real2sim2real.mp4" width="100%" style="border-radius:20px;"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><bold>DexMimicGen can generate diverse datasets from few human demonstrations for new reset distributions</bold></h3>
+      </div>
+    </div>
+  </div>
   </div>
 </section>
 
-<section class="hero is-small">
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <p style="text-align: center; font-size: 18px">We showcase datasets generated by DexMimicGen across different reset distributions for three tasks in <a href="https://robosuite.ai" target="_blank">Robosuite</a> below.</p>
+
+        <!-- Pouring -->
+        <h4 class="title is-4" style="text-align: center; padding-top: 20px;">Pouring</h4>
+        <div class="columns is-centered">
+          <div class="column is-centered">
+            <div class="video-container">
+              <video class="center" playsinline autoplay loop muted src="./resources/new_reset_dists/pouring_D0.mp4" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Reset Distribution D0</p>
+            </div>
+          </div>
+          <div class="column is-centered">
+            <div class="video-container">
+              <video class="center" playsinline autoplay loop muted src="./resources/new_reset_dists/pouring_D1.mp4" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Reset Distribution D1</p>
+            </div>
+          </div>
+          <div class="column is-centered">
+            <div class="video-container">
+              <video class="center" playsinline autoplay loop muted src="./resources/new_reset_dists/pouring_D2.mp4" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Reset Distribution D2</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Box Cleanup -->
+        <h4 class="title is-4" style="text-align: center; padding-top: 20px;">Box Cleanup</h4>
+        <div class="columns is-centered">
+          <div class="column is-centered">
+            <div class="video-container">
+              <video class="center" playsinline autoplay loop muted src="./resources/new_reset_dists/box_cleanup_D0.mp4" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Reset Distribution D0</p>
+            </div>
+          </div>
+          <div class="column is-centered">
+            <div class="video-container">
+              <video class="center" playsinline autoplay loop muted src="./resources/new_reset_dists/box_cleanup_D1.mp4" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Reset Distribution D1</p>
+            </div>
+          </div>
+          <div class="column is-centered">
+            <div class="video-container">
+              <video class="center" playsinline autoplay loop muted src="./resources/new_reset_dists/box_cleanup_D2.mp4" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Reset Distribution D2</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Three Piece Assembly -->
+        <h4 class="title is-4" style="text-align: center; padding-top: 20px;">Three Piece Assembly</h4>
+        <div class="columns is-centered">
+          <div class="column is-centered">
+            <div class="video-container">
+              <video class="center" playsinline autoplay loop muted src="./resources/new_reset_dists/three_piece_assembly_D0.mp4" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Reset Distribution D0</p>
+            </div>
+          </div>
+          <div class="column is-centered">
+            <div class="video-container">
+              <video class="center" playsinline autoplay loop muted src="./resources/new_reset_dists/three_piece_assembly_D1.mp4" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Reset Distribution D1</p>
+            </div>
+          </div>
+          <div class="column is-centered">
+            <div class="video-container">
+              <video class="center" playsinline autoplay loop muted src="./resources/new_reset_dists/three_piece_assembly_D2.mp4" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Reset Distribution D2</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drawer Cleanup -->
+        <h4 class="title is-4" style="text-align: center; padding-top: 20px;">Drawer Cleanup</h4>
+        <div class="columns is-centered">
+          <div class="column is-centered">
+            <div class="video-container" style="display: flex; justify-content: center;">
+              <video class="center" playsinline autoplay loop muted src="./resources/new_reset_dists/drawer_cleanup_D0.mp4" width="100%" style="border-radius:10px;"></video>
+            </div>
+            <p style="text-align: center; font-size: 18px">Reset Distribution D0</p>
+          </div>
+          <div class="column is-centered">
+            <div class="video-container" style="display: flex; justify-content: center;">
+              <video class="center" playsinline autoplay loop muted src="./resources/new_reset_dists/drawer_cleanup_D1.mp4" width="100%" style="border-radius:10px;"></video>
+            </div>
+            <p style="text-align: center; font-size: 18px">Reset Distribution D1</p>
+          </div>
+        </div>
+
+      </div> 
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
-
-      <div class="column is-centered has-text-centered">
-        <img src="static/figures/overview.jpg" alt="Motivation of our model"/>
-      </div>    
-  </div>
-</div>
-</div>
-</section>
-
-
-
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-         <h2 class="title is-3">How does it work?</h2> 
-        <div class="content has-text-justified">
-          <p>
-            Our framework leverages a sophisticated shared autonomy framework designed to enhance human-machine collaboration. At its core, it features a state-of-the-art motion generator capable of encoding task-specific movements and wrench profiles. This motion generator is adept at navigating complex, closed-loop paths while seamlessly incorporating obstacle avoidance, ensuring smooth and efficient operations across diverse environments.
-          </p> <p>
-          Building upon this foundation, our approach introduces a Variable Impedance and Force Control (VIC) system. This system is meticulously crafted to ensure precise trajectory following and force application, adjusting dynamically to different levels of human interaction and responding effectively to any human-induced changes. Such adaptability ensures that machines can work in perfect harmony with their human counterparts, enhancing productivity and safety.
-        </p> <p>
-        A key element of the system is the integration of an energy-tank-based passivation strategy. This strategy ensures the system remains stable and responsive even as it adjusts to changing control parameters and impedance levels, drawing on advanced concepts to maintain operational integrity.
-      </p> <p>
-        Proposed methodology has been rigorously tested through extensive experiments and simulations, demonstrating its effectiveness and reliability. This framework opens new avenues for human-machine collaboration, promising significant advancements in industrial, medical, and service applications.
-        </p>
-        <div class="columns is-centered has-text-centered">
-            <div class="item">
-          <p style="margin-bottom: 30px">
-<!--
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <source src="static/figures/MDM-page.mp4"
-          type="video/mp4">
-        </video>
- --><br><br>
-        </p>
-        </div>
-            </div>
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>DexMimicGen generates datasets for different simulation frameworks</strong></h3>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
   </div>
 </section>
 
-    
-<section class="hero is-small">
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <p style="text-align: center; font-size: 18px; margin-bottom: 30px;">The following generated datasets are from the <a href="https://chernyadev.github.io/bigym/" target="_blank">BiGym</a> simulation framework and feature mobile bimanual manipulation, while the other visualized datasets come from the <a href="https://robosuite.ai" target="_blank">Robosuite</a>.</p>
+        <div class="columns is-centered">
+          <div class="column is-centered">
+            <div class="video-container">
+              <video class="center" playsinline autoplay loop muted src="./resources/bigym/DishwasherLoadPlates_accelerated.mp4" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Dishwasher Load Plates</p>
+            </div>
+          </div>
+          <div class="column is-centered">
+            <div class="video-container">
+              <video class="center" playsinline autoplay loop muted src="./resources/bigym/FlipCup_accelerated.mp4" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Flip Cup</p>
+            </div>
+          </div>
+          <div class="column is-centered">
+            <div class="video-container">
+              <video class="center" playsinline autoplay loop muted src="./resources/bigym/PutCups_accelerated.mp4" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Put Cups</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
-
-      <div class="column is-centered has-text-centered">
-        <img src="static/figures/modeloverview.png" alt=""/>
-      </div>    
-  </div>
-</div>
-</div>
-</section>
-
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-         <h2 class="title is-3">Comparison with SEDS and LPV-DS</h2> 
-        <div class="content has-text-justified">
-          <p>
-            To evaluate the effectiveness of our method, we compared it with SEDS and LPV-DS by using the leaf shape from the LASA handwriting dataset, as shown in the above figure. Although both SEDS and LPV-DS managed to reach the final point, they couldn't accurately copy the original example. LPV-DS had a smaller error in following the path than SEDS, but still couldn't match the original example closely.
-          </p>
-          <p>
-            In the above figure, the red lines show the original examples, black lines with arrows represent the path of movement, and solid black lines are the attempts to recreate the examples. Our method uses the average path from the examples, marked with a green dashed line in above figure. It's worth noting that our method only needs one example, chosen from many based on the best performance. Our findings show that points starting away from the example path eventually meet and then follow this average path, reaching the end goal. This proves our method can capture complex shapes, including those that don't directly move closer to the target over time. Our technique also works well with other shapes in the LASA handwriting dataset.
-          </p>
-        <div class="columns is-centered has-text-centered">
-            <div class="item">
-          <p style="margin-bottom: 30px">
-<!--
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <source src="static/figures/MDM-page.mp4"
-          type="video/mp4">
-        </video>
- --><br><br>
-        </p>
-        </div>
-            </div>
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>DexMimicGen Pipeline Overview</strong></h3>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
   </div>
 </section>
 
-
-    
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="column is-centered has-text-centered">
-        <img src="static/figures/exp.png" alt="dd"/>
-      </div>    
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <img src="./resources/pipeline.jpg" width="100%" style="border-radius:20px;">
+      </div>
+    </div>
   </div>
-</div>
-</div>
 </section>
 
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-         <h2 class="title is-3">Experiments</h2> 
-        <div class="content has-text-justified">
-            <p>
-            In our research, we delved into an innovative approach enabling robots to acquire and replicate precise movements and exert the necessary force for task execution, utilizing a hands-on teaching strategy known as kinesthetic teaching. This technique proves invaluable for tasks requiring direct environmental interaction. A standout feature of our methodology is the seamless transition of control from human to robot during tasks, facilitating an efficient and intuitive collaboration. We evaluated our method through a basic yet illustrative test: button pressing and polishing.
-            </p> <p>
-            The test involved a person guiding the robot's arm to different positions to teach the task. Upon release, the robot autonomously executed the task, demonstrating its capability to accurately follow the instructed path and press the button, with the arm movements captured in 3D. The robot exhibited adaptive behavior when manually adjusted, becoming more compliant for smoother interaction, thereby enhancing the collaborative experience.
-            </p> <p>
-            Building on previous experiments where human-applied force directed robot control, we explored complex task execution, such as polishing intricately shaped objects. Utilizing a leaf-shaped object from the LASA handwriting dataset, the robot learned and replicated the polishing motion. We monitored the robot's arm during learning, task execution, and obstacle avoidance, emphasizing its ability to maintain a close trajectory with minimal deviation and apply appropriate force for polishing.
-            </p> <p>
-            The robot demonstrated intelligent obstacle navigation, resuming its task without disruption. An integral experiment component was the introduction of an "energy tank" concept to regulate energy consumption, ensuring safe, efficient operation. The robot's energy management system automatically activated a low-energy mode upon reaching critical levels, halting tasks to prevent issues.
-            </p> <p>
-            This study showcased the robot's real-time adaptability in movement and force application, managing complex tasks and obstacles while effectively regulating its energy consumption for safe, efficient functionality.
-            </p> 
-            
-        <div class="columns is-centered has-text-centered">
-            <div class="item">
-          <p style="margin-bottom: 30px">
-<!--
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <source src="static/figures/MDM-page.mp4"
-          type="video/mp4">
-        </video>
- --><br><br>
-        </p>
-        </div>
-            </div>
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <div class="columns is-centered">
+          <div class="column is-centered">
+            <video class="center" playsinline autoplay loop muted src="./resources/mosaic.mp4" width="100%" style="border-radius:20px;"></video>
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
   </div>
 </section>
 
- 
-
-
-    
 <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>
-@article{jadav2024salads,
-  title={Shared Autonomy via Variable Impedance Control and Virtual Potential Fields for Encoding Human Demonstrations},
-  author={Jadav, Shail and Heidersberger, Johannes and Ott, Christian and Lee,Dongheui},
-  journal={2024 IEEE International Conference on Robotics and Automation (ICRA)},
-  year={2024}
-}</code></pre>
-    </div>
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{jiang2024dexmimicen,
+      title     = {DexMimicGen: Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning},
+      author    = {Jiang, Zhenyu and Xie, Yuqi and Lin, Kevin and Xu, Zhenjia and Wan, Weikang and Mandlekar, Ajay and Fan, Linxi and Zhu, Yuke},
+      booktitle = {2025 IEEE International Conference on Robotics and Automation (ICRA)},
+      year      = {2025}
+}
+    </code></pre>
+  </div>
 </section>
+  <!-- booktitle = {TODO}, -->
 
 
+<section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Contact</h2>
+    <p>If you have any questions, please feel free to contact <a href="mailto:zhejiang@nviida.com">Zhenyu Jiang</a>, <a href="mailto:amandlekar@nvidia.com">Ajay Mandelkar</a>, <a href="mailto:linxif@nvidia.com">Jim Fan</a> and <a href="mailto:yukez@nvidia.com">Yuke Zhu</a>.</p>
+  </div>
+</section>
 
 
 <footer class="footer">
- <!--  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-      href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
-      <i class="fas fa-file-pdf"></i>
-    </a>
-    <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-      <i class="fab fa-github"></i>
-    </a>
-  </div> -->
-  <div class="columns is-centered">
-    <div class="column is-8">
-      <div class="content">
-        <p>
-          This website is licensed under a <a rel="license"
-          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-        Commons Attribution-ShareAlike 4.0 International License</a>.
-      </p>
-      <p>
-        Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you want to reuse their <a
-        href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
-      </p>
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website template borrowed from <a href="https://nerfies.github.io/">NeRFies</a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
 </footer>
 
-  </body>
-  </html>
+</body>
+</html>
