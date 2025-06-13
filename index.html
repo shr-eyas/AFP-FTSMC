@@ -40,6 +40,40 @@
     .math-display { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     .math-display p { white-space: nowrap; margin: 1em 0; }
   </style>
+
+  <style>
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      font-family: serif;
+    }
+
+    .styled-table th,
+    .styled-table td {
+      border: 2px solid black;
+      padding: 8px;
+    }
+
+    .styled-table th {
+      font-weight: bold;
+    }
+
+    .styled-table thead th {
+      background-color: #f8f8f8;
+    }
+
+    .styled-table td:first-child {
+      font-weight: bold;
+      text-align: left;
+    }
+
+    @media (max-width: 768px) {
+      .table-scroll {
+        overflow-x: auto;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -227,13 +261,28 @@
 <section class="section" id="results">
   <div class="container is-max-desktop content">
     <h2 class="title">Results</h2>
-    <table class="table is-fullwidth is-striped">
+    <table class="styled-table">
       <thead>
-        <tr><th>Controller</th><th>Integral Absolute Error (IAE, Joint-1)</th></tr>
+        <tr>
+          <th rowspan="2">Control Methodologies</th>
+          <th colspan="2">Integral absolute error (rad)</th>
+        </tr>
+        <tr>
+          <th>1<sup>st</sup> Link</th>
+          <th>2<sup>nd</sup> Link</th>
+        </tr>
       </thead>
       <tbody>
-        <tr><td>Terminal Sliding Mode (TSMC)</td><td>81.33</td></tr>
-        <tr><td>AFP-FTSMC (Proposed)</td><td>48.30</td></tr>
+        <tr>
+          <td>TSMC</td>
+          <td>81.3275</td>
+          <td>101.4513</td>
+        </tr>
+        <tr>
+          <td>Proposed AFP-FTSMC</td>
+          <td>48.3007</td>
+          <td>51.6172</td>
+        </tr>
       </tbody>
     </table>
     <p>AFP-FTSMC reduces IAE by ~40%, suppresses chattering, and provides smooth torque profiles, with robust disturbance rejection under load variations.</p>
