@@ -26,17 +26,20 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 
+  <!-- MathJax configuration -->
   <script>
     window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        packages: {'[+]': ['ams']}
-      },
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']], packages: {'[+]': ['ams']} },
       svg: { fontCache: 'global' }
     };
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <!-- Responsive scrollable math container -->
+  <style>
+    .math-display { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .math-display p { white-space: nowrap; margin: 1em 0; }
+  </style>
 </head>
 <body>
 
@@ -209,10 +212,13 @@
     <h2 class="title">How Does It Work?</h2>
     <ul>
       <li><strong>Adaptive Fuzzy Predictor:</strong> A Takagi–Sugeno fuzzy system with <em>Q</em> IF–THEN rules models unknown disturbances <em>d₁(t), d₂(t)</em>. Online adaptation via Lyapunov-based laws ensures estimation error <em>\(\hat d(t)-d(t)\)</em> converges.</li>
-      <li><strong>Fast Terminal Sliding Mode Controller:</strong> Non-singular sliding surface
-        <p class="has-text-left">\[ S = \varepsilon_1 e + \varepsilon_2 \dot e + \kappa_1 e^{p/q} + \kappa_2 \dot e^{p/q}, \quad 1<\tfrac{p}{q}<2 \]</p>
-        and control law
-        <p class="has-text-left">\[ \tau = M(\theta)[\dot\eta(e)+K_1 S+K_2\mathrm{sgn}(S)]+C(\theta,\dot\theta)\dot\theta+G(\theta)+C\hat d \]</p>
+      <li><strong>Fast Terminal Sliding Mode Controller:</strong>
+        <div class="math-display has-text-left">
+          <p>\[ S = \varepsilon_1 e + \varepsilon_2 \dot e + \kappa_1 e^{p/q} + \kappa_2 \dot e^{p/q}, \quad 1<\tfrac{p}{q}<2 \]</p>
+        </div>
+        <div class="math-display has-text-left">
+          <p>\[ \tau = M(\theta)[\dot\eta(e)+K_1 S+K_2\mathrm{sgn}(S)]+C(\theta,\dot\theta)\dot\theta+G(\theta)+C\hat d \]</p>
+        </div>
       </li>
     </ul>
   </div>
