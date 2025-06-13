@@ -192,6 +192,39 @@
   </div>
 </section>
 
+<section class="section" id="how-it-works">
+  <div class="container is-max-desktop content">
+    <h2 class="title">How Does It Work?</h2>
+    <ul>
+      <li><strong>Adaptive Fuzzy Predictor:</strong> A Takagi–Sugeno fuzzy system with $Q$ IF–THEN rules models unknown disturbances $d_1(t), d_2(t)$. Online adaptation via Lyapunov-based laws ensures estimation error $\hat d(t)-d(t)$ converges.</li>
+      <li><strong>Fast Terminal Sliding Mode Controller:</strong> Non-singular sliding surface $$S = \varepsilon_1 e + \varepsilon_2 \dot e + \kappa_1 e^{p/q} + \kappa_2 \dot e^{p/q}, \quad 1<\tfrac{p}{q}<2$$ and control law $$\tau = M(\theta)[\dot\eta(e)+K_1 S+K_2\mathrm{sgn}(S)]+C(\theta,\dot\theta)\dot\theta+G(\theta)+C\hat d$$ guarantees finite-time convergence and chattering reduction.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="results">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Results</h2>
+    <table class="table is-fullwidth is-striped">
+      <thead>
+        <tr><th>Controller</th><th>Integral Absolute Error (IAE, Joint-1)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Terminal Sliding Mode (TSMC)</td><td>81.33</td></tr>
+        <tr><td>AFP-FTSMC (Proposed)</td><td>48.30</td></tr>
+      </tbody>
+    </table>
+    <p>AFP-FTSMC reduces IAE by ~40%, suppresses chattering, and provides smooth torque profiles, with robust disturbance rejection under load variations.</p>
+  </div>
+</section>
+
+<section class="section" id="conclusion">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Conclusion & Future Work</h2>
+    <p>AFP-FTSMC combines rapid disturbance estimation with finite-time convergence, validated experimentally on a two-link manipulator. Future work includes energy-efficient adaptation and extension to multi-DOF systems.</p>
+  </div>
+</section>
+
 <!-- <section class="section">
   <div class="container">
     <div class="columns is-centered">
